@@ -2,15 +2,17 @@
 % Please edit documentation in R/read_argos.R
 \name{read_argos}
 \alias{read_argos}
-\title{Read Argos PRV streams}
+\title{Read Argos PRV records.}
 \usage{
-read_argos(x, correct.all = TRUE, dtFormat = "\%Y-\%m-\%d \%H:\%M:\%S",
+read_argos(x, mungefix = TRUE, dtFormat = "\%Y-\%m-\%d \%H:\%M:\%S",
   tz = "UTC", duplicateTime_eps = 0.01,
   p4 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs +towgs84=0,0,0",
   verbose = FALSE)
 }
 \arguments{
 \item{x}{Connection to PRV records}
+
+\item{mungefix}{logical, should all track-validity errors be fixed.}
 
 \item{dtFormat}{}
 
@@ -21,8 +23,6 @@ read_argos(x, correct.all = TRUE, dtFormat = "\%Y-\%m-\%d \%H:\%M:\%S",
 \item{p4}{}
 
 \item{verbose}{}
-
-\item{mungefix}{logical, should all track-validity errors be fixed.}
 }
 \value{
 A dplyr tbl_df
