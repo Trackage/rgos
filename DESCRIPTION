@@ -1,5 +1,5 @@
-Package: tripr
-Title: Read Argos Track Data
+Package: rgos
+Title: Read Argos Data
 Version: 0.0.0.9000
 Authors@R: person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre"))
 Description: Read data from Argos PRV, DIAG and XML files.
