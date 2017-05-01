@@ -13,12 +13,10 @@ getit <- function(lab) as.character(x  %>% xml_find_all(sprintf("//%s", lab)) %>
 #' Read Argos XML records
 #'
 #'
-#' @param x
+#' @param x files
 #'
-#' @return
+#' @return dplyr tbl_df
 #' @export
-#'
-#' @examples
 read_argosxml <- function(x) {
   al <- vector("list", length(x))
   for (ifile in seq_along(x)) {
