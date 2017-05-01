@@ -1,3 +1,3 @@
-# tripr
+# rgos
 
-The trip package needs an upgrade. 
+Argos data for R. 
